@@ -1,2 +1,2 @@
 # Drug-Prediction
-Drug Prediction[](https://drugpredictiontf.herokuapp.com/)
+[Drug Prediction](https://drugpredictiontf.herokuapp.com/)
