@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script src="assets/code.js"></script>
+    <title>DRUG PREDICTOR BY TEAM 1</title>
+  </head>
+  <body>
+    <br>
+    <a href="index.html"><img class="logo" src="" alt=""></a>
+    <br>
+    <div class="container main">
+  <div class="jumbotron" id="holder">
+    <h1 class='main_heading'>DRUG PREDICTION</h1>
+    <img class="logo" src="assets/logo.png" alt="">
+    <h3>You can use this application to predict which drug type is right for you</h3>
+    <br>
+    <form action="/result" method="POST">
+      <div class="mb-3">
+        <label for="age" class="form-label">Age</label>
+        <input type="text" class="form-control" id="age" name="age" maxlength="2">
+        <br>
+      </div>
+      <div class="mb-3">
+        <label for="Gender" class="form-label">Gender</label>
+        <select id="Gender" class="form-select" name="Gender">
+          <option value="0">MALE</option>
+          <option value="1">FEMALE</option>
+        </select>
+        <br>
+      </div>
+      <div class="mb-3">
+        <label for="Blood Pressure" class="form-label">Blood Pressure</label>
+        <select id="Blood Pressure" class="form-select" name="Blood Pressure">
+          <option value="0">HIGH</option>
+          <option value="1">LOW</option>
+          <option value="2">NORMAL</option>
+        </select>
+        <br>
+      </div>
+      <div class="mb-3">
+        <label for="Cholesterol" class="form-label">Cholesterol</label>
+        <select id="Cholesterol" class="form-select" name="Cholesterol">
+          <option value="0">HIGH</option>
+          <option value="1">NORMAL</option>
+        </select>
+        <br>
+      </div>
+      <div class="mb-3">
+        <label for="Salt_concentration" class="form-label">Salt Concentration (Na and K levels)</label>
+        <input type="text" class="form-control" id="Salt_concentration" name="Salt_concentration" maxlength="8">
+        <br>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <h2 class="result"></h2>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <div class="footer-copyright text-center py-3">
+    <div class="bottom">
+      <p><a href="#">Team 1 | Patient Drug Predictor</a></p>
+    </div>
+  </div>
+
+</footer>
+<!-- Footer -->
+
+
+  </body>
+</html>
